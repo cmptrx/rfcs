@@ -189,8 +189,8 @@ and empty data, and among the secondary entries, there MUST be a UTF-8
 `'auth_token'` entry, and there MAY be a UTF-8 `'auth_username'` entry. The further secondary
 protocol data entries of this `Message` request MAY also be used to send
 additional information to the server. In situations where no authentication
-is needed, the `'auth_token'` and `'auth_username'` data can be set to the
-empty string, but they cannot be omitted. In situations where the `'auth_token'`
+is needed, the `'auth_token'` data can be set to the
+empty string, but it cannot be omitted. In situations where the `'auth_token'`
 acts as a bearer token, and the value of `'auth_username'` can be derived from
 the value of `'auth_token'` deterministically, the `'auth_username'` entry can be omitted.
 
